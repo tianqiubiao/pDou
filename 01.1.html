@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            text-decoration: none !important;
+        }
+
+        .sing {
+            width: 100%;
+
+        }
+
+        .sing {
+            height: 590px;;
+        }
+
+        .sing .singIn {
+            position: relative;
+            width: 100%;
+            height: 460px;
+
+        }
+
+        .sing .singIn .singInL {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sing .singIn .singInR {
+            position: absolute;
+            left: 630px;
+            top: 0;
+            padding: 20px;
+            width: 430px;
+            height: 420px;
+            background: #f9f9f9;;;
+        }
+
+        .sing .singIn .singInR div div {
+            display: inline-block;
+        }
+
+        .sing .singIn .singInR div div span {
+            color: #f7869c;
+        }
+
+        .sing .singIn .singInR div div input {
+            margin-left: 20px;;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        .sing .singIn .singInR .singInR1 {
+            /*margin-top: 20px;;*/
+            line-height: 60px;
+        }
+
+        .sing .singIn .singInR .singInR1 .singInRL {
+            width: 135px;
+            text-align: right;
+        }
+
+        .sing .singIn .singInR .singInR1 .singInRR {
+            height: 60px;
+        }
+
+        .sing .singIn .singInR .singInR1 .singInRR input {
+            width: 260px;
+        }
+
+        .sing .singIn .singInR .singInR1 .singInRR #sing3 {
+            width: 160px;
+        }
+
+        .sing .singIn .singInR .singInR1 .trueImg {
+            position: relative;
+            top: 15px;;
+            clear: both;
+            width: 90px;
+            height: 40px;;;
+        }
+
+        .sing .singIn .singInR .singInR1 .trueImg div {
+            float: left;
+            width: 90px;
+            height: 40px;
+        }
+
+        .sing .singIn .singInR .singInR1 .trueImg div:nth-child(2) {
+            /*position: absolute;*/
+            /*top: 16px;;*/
+            /*left: 0;*/
+            text-align: center;
+            line-height: 40px;
+            display: none;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        .sing .singIn .singInR .singInR1 .trueImg:hover div:nth-child(1) {
+            display: none;
+        }
+
+        .sing .singIn .singInR .singInR1 .trueImg:hover div:nth-child(2) {
+            display: block;
+        }
+
+        .sing .singIn .singInR   .singInLast {
+            margin: 0 auto;
+            width: 292px;
+            height: 42px
+        }
+
+        .sing .singIn .singInR   .singInLas {
+            margin: 0 auto;
+            width: 299px;
+            font-size: 14px;
+            margin-top: 28px;
+            margin-bottom: 20px;
+
+        }
+
+        .sing .singIn .singInR   .singInLast a {
+            display: block;
+            width: 290px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #f4b942;
+            border-radius: 5px;
+            color: #ffffff;
+            font-weight: 100;
+        }
+
+        #sing5 {
+            margin-bottom: 20px
+        }
+
+        #sing5 a {
+            color: #66ccff
+        }
+    </style>
+</head>
+<body>
+<div class="sing">
+    <div class="singIn">
+        <div class="singInL"><img src="img/sing-in.png" alt=""></div>
+        <div class="singInR">
+            <div class="singInR1">
+                <div class="singInRL"><span>*</span>注册手机号</div>
+                <div class="singInRR"><input type="tel" placeholder="您在P兜的身份凭证" id="sing0"></div>
+            </div>
+            <div class="singInR1">
+                <div class="singInRL"><span>*</span>登录密码</div>
+                <div class="singInRR"><input type="text" placeholder="请设置6-12位密码" id="sing1"></div>
+            </div>
+            <div class="singInR1">
+                <div class="singInRL"><span>*</span>确认登录密码</div>
+                <div class="singInRR"><input type="text" placeholder="请确认密码" id="sing2"></div>
+            </div>
+            <div class="singInR1">
+                <div class="singInRL"><span>*</span>验证码</div>
+                <div class="singInRR"><input type="text" placeholder="不区分大小写" id="sing3">
+                    <!--验证码-->
+                    <div class="trueImg">
+                        <div></div>
+                        <div>点击换图</div>
+                    </div>
+                </div>
+            </div>
+            <div class="singInR1">
+                <div class="singInRL">邀请码</div>
+                <div class="singInRR"><input type="text" placeholder="选填" id="sing4"></div>
+            </div>
+            <div class="singInLas" id="sing5">
+                <span><input type="checkbox"></span>我已阅读并同意 <a href="">《P兜理财用户服务协议》</a>
+            </div>
+            <div class="singInLast"><a href="">注&nbsp;册</a></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

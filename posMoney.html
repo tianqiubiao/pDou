@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/01.css">
+    <link rel="stylesheet" href="css/pay.css">
+    <style>
+        .posMoney {
+            width: 1100px;
+            margin: 0 auto;;
+        }
+
+        .posMoney .posMoneyTop .posMoneyTopT {
+            height: 49px;
+            line-height: 45px;
+            overflow: hidden;
+        }
+
+        .posMoney .posMoneyTop .posMoneyTopT div:nth-child(1) {
+            font-size: 23px;
+            float: left;
+        }
+
+        .posMoney .posMoneyTopF {
+            padding: 0 40px;
+            padding-top: 20px;
+            overflow: hidden;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL {
+            float: left;
+            /*overflow: hidden;*/
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA {
+            overflow: hidden;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1,
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2,
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3,
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 {
+            float: left;
+            height: 170px;;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 {
+            width: 180px;;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 {
+            width: 130px;;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 {
+            width: 255px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 {
+            width: 105px;;;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(1),
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 div:nth-child(1) {
+            height: 85px;
+            line-height: 85px;
+            font-size: 14px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(2),
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 div:nth-child(2) {
+            height: 55px;
+            font-size: 30px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 div {
+            font-size: 16px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 div:nth-child(1) {
+            height: 85px;
+            line-height: 85px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 div:nth-child(2) {
+            height: 35px;
+            line-height: 35px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 .posMoneyTopA4m {
+            position: relative;
+            top: 35px;
+            overflow: hidden;
+            border-radius: 50%;
+            width: 101px;
+            height: 101px;;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 . div {
+
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 .posMoneyTopA4m div:nth-child(1) {
+            position: absolute;
+            width: 101px;
+            height: 101px;
+            background: #CDF0F5;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 .posMoneyTopA4m div:nth-child(2) {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 88px;
+            height: 88px;;;
+            background: #6ed3d6;
+            border-radius: 50%;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 .posMoneyTopA4m div:nth-child(3) {
+            position: absolute;
+            line-height: 101px;
+            font-size: 20px;
+            color: #ffe98d;
+            text-align: center;
+            width: 101px;
+            height: 101px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopA {
+            overflow: hidden;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopB {
+            width: 675px;
+            border-top: 1px dashed #CCCCCC;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopB .posMoneyTopLB, .posMoney .posMoneyTopF .posMoneyTopB .posMoneyTopLC {
+            float: left;
+            font-size: 16px;
+            line-height: 80px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopB .posMoneyTopLC {
+            float: right;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopR {
+            float: left;
+            margin-left: 50px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopR .posMoneyTopRA {
+
+            padding: 15px 69px;
+            width: 155px;
+            height: 185px;
+            border-left: 1px solid #EEEEEE;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopR .posMoneyTopRA div:nth-child(2) {
+            line-height: 35px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(2) span {
+            color: #f5c25a;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(2) span:nth-child(1),
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(2) span:nth-child(2) {
+            color: #f77f96;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 div:nth-child(2) span {
+            color: #6ed3d6;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 div:nth-child(2) span:nth-child(2) {
+            font-size: 16px;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 div span {
+            color: #f77f96;
+        }
+
+        .posMoney .posMoneyTop .posMoneyTopT {
+            padding: 0px 40px;
+            border-bottom: 1px dashed #CCCCCC;
+        }
+
+        .posMoney .posMoneyTop .posMoneyTopT div:nth-child(2) {
+            float: right;
+            color: #f77f96;
+        }
+
+        .posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopB p span {
+            color: #999999;
+        }
+        #moneyList{
+            position: absolute;
+            bottom: 0px;
+            padding-bottom: 0;
+        }
+        #moneyList .moneyPage{
+            width: 510px;
+            margin:0 auto;;
+        }
+        #moneyList .moneyPage div{
+            display: inline-block;
+            border-radius: 3px;
+        }
+
+        #moneyList .moneyPage .moneyPageL,.moneyList .moneyPage .moneyPageR{
+            position: relative;
+            top: -10px;;
+            width: 75px;
+        }
+        #moneyList .moneyPage ul{
+
+            display: inline-block;
+            overflow: hidden;
+            border:1px solid #d5d5d5;
+            border-right: none;
+            height: 30px;;
+            background: white;
+        }
+
+        #moneyList .moneyPage ul li{
+            float: left;
+            width: 31px;
+            border-right:1px solid #d5d5d5;;
+        }
+        /*登录*/
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sign_on {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .sign_on .sign_in {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -162px 0 0 -208px;
+            width: 415px;
+            height: 325px;
+            border-radius: 5px;
+            background: #ffffff;;
+        }
+
+        .sign_on .sign_in .sign_top {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #ff9696;
+            color: #ffffff;
+            font-size: 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .sign_on .sign_in .sign_close {
+            position: absolute;
+            top: 8px;
+            left: 374px;;;
+            width: 28px;
+            height: 28px;
+            background: url("img/close.png") no-repeat;
+        }
+
+        .sign_on .sign_in .sign_foot {
+            /*height:285px;*/
+            padding: 17px 34px;
+        }
+
+        .sign_on .sign_in .sign_foot .sign_footA {
+            position: relative;
+            height: 60px;
+
+
+        }
+
+        .sign_on .sign_in .sign_foot .sign_footA .sign_footB {
+            height: 40px;;
+        }
+
+
+
+        .sign_on .sign_in .sign_footA  .sign_footC {
+            display: none;
+            position: absolute;
+            top: 45px;
+            width: 300px;
+            height: 15px;
+            line-height: 15px;
+            font-size: 10px;
+            color: red;;
+        }
+
+        .sign_on .sign_in .sign_foot .sign_down {
+            height: 40px;
+            line-height: 40px;
+            background: #f4b942;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .sign_in_down {
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .sign_in_down div {
+            float: left;
+        }
+        .sign_in_down div:nth-child(2){
+            float: right;
+        }
+        .sign_in .sign_foot .sign_footA .sign_footD{
+            overflow: hidden;
+            border:1px solid #CCCCCC;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;;;;
+
+
+        }
+
+        .sign_on .sign_in .sign_foot .sign_footA .sign_footD input {
+            margin: 0 auto;
+            height: 40px;
+            width: 300px;
+            border:none;
+        }
+        input:focus{
+            outline: none;
+        }
+        .sign_in .sign_foot .sign_footA .sign_footD input{
+            float: right;
+
+        }
+        .sign_in .sign_foot .sign_footE {
+            overflow: hidden;
+
+        }
+        .sign_in .sign_foot  .sign_footE .sign_footA, .sign_in .sign_foot  .sign_footE .sign_footF {
+            float: left;
+        }
+        .sign_in .sign_foot .sign_footE .sign_footA .sign_footB{
+            padding-left: 2px;
+            width: 240px;;
+            height: 40px;;
+            border:1px solid #CCCCCC;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;;;;
+        }
+        .sign_in .sign_foot .sign_footE .sign_footA .sign_footB input{
+            margin: 0 auto;
+            height: 40px;
+            width: 235px;
+            border:none;
+        }
+        .sign_in .sign_foot .sign_footE .sign_footF{
+            margin-left: 10px;
+            width: 90px;
+            height: 40px;;;
+            border:1px solid #CCCCCC;
+        }
+        .sign_in .sign_foot .sign_footE .sign_footA .sign_fooC{
+            display: none;
+            font-size: 10px;
+            color: red;;
+        }
+        .sign_phone{
+            background:url("img/sign_n.jpg")  no-repeat;
+        }
+        .sign_pass{
+            background:url("img/sign_o.png")  no-repeat;}
+        /*实名认证*/
+        .trueName {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .name_in {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -121px 0 0 -209px;
+            width: 418px;
+            height: 242px;
+            border-radius: 5px;
+            background: #ffffff;;
+        }
+
+        .sign_top {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #ff9696;
+            color: #ffffff;
+            font-size: 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .sign_close {
+            position: absolute;
+            top: 8px;
+            left: 374px;;;
+            width: 28px;
+            height: 28px;
+            background: url("img/close.png") no-repeat;
+        }
+
+        .trueNameA {
+            margin-bottom: 25px;
+            overflow: hidden;
+            width: 350px;;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .trueNameA div {
+            float: left;
+        }
+
+        .trueNameA div:nth-child(2) {
+            padding: 0 2px;
+            width: 256px;
+            height: 37px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+
+        .trueNameA div:nth-child(2) input {
+            width: 256px;
+            height: 33px;
+            border: none;;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .sign_down {
+            height: 40px;
+            line-height: 40px;
+            background: #f4b942;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .trueNameFoot {
+            width: 345px;;
+            padding: 20px 35px;
+        }
+    </style>
+</head>
+<body>
+<div class="posMoney">
+    <!--头部固定-->
+    <div class="posMoneyTop">
+        <div class="posMoneyTopT">
+            <div>定宝-10056</div>
+            <div>借款协议（范本）</div>
+        </div>
+        <div class="posMoneyTopF">
+            <div class="posMoneyTopL">
+
+                <div class="posMoneyTopA">
+                    <div class="posMoneyTopA1">
+                        <div>年化收益率</div>
+                        <div><span>10</span><span>%</span><span>+</span><span>2</span><span>%</span></div>
+                    </div>
+                    <div class="posMoneyTopA2">
+                        <div>期限</div>
+                        <div><span>2</span><span>个月</span></div>
+                    </div>
+                    <div class="posMoneyTopA3">
+                        <div>融资满额&nbsp;<span>18,000,000.00</span>&nbsp;元</div>
+                        <div>万元收益&nbsp;<span>100&nbsp;元</span></div>
+                        <div>起投金额&nbsp;100&nbsp;元</div>
+                    </div>
+                    <div class="posMoneyTopA4">
+                        <div class="posMoneyTopA4m">
+                            <div></div>
+                            <div></div>
+                            <div>已满标</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="posMoneyTopB">
+
+                    <div class="posMoneyTopLB"><p>还款方式&nbsp;<span>按月付息&nbsp;到期还本</span></p></div>
+                    <div class="posMoneyTopLC"><p>满标时间&nbsp;<span>2016.06.07&nbsp;20:36:56</span></p></div>
+
+                </div>
+            </div>
+
+            <!--二维码-->
+            <div class="posMoneyTopR">
+                <div class="posMoneyTopRA">
+                    <div><img src="img/PdMa.png" alt="P兜理财"></div>
+                    <div>手机投标，安全快捷</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部选项卡-->
+    <div class="posMoneyFoot">
+
+        <div class="posMoneyFootTop">
+            <div class="posMoneyFootTopBg">项目简介</div>
+            <div>投资记录</div>
+        </div>
+
+        <div class="posMoneyFootA">
+            <!--项目简介-->
+            <div class="posMoneyJJ" style="display: none">
+                <div>
+                    <div>借款描述</div>
+                    <div><p></p></div>
+                </div>
+                <div>
+                    <div>借款人信息</div>
+                    <div>
+                        <ul>
+                            <li>姓名：李**</li>
+                            <li>身份证号：1000***00</li>
+                            <li>线居住地：北京</li>
+
+                        </ul>
+                        <ul>
+                            <li>性别：男</li>
+                            <li>年龄：47</li>
+                            <li>回音状况：已婚</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>房产信息</div>
+                    <div>
+                        <ul>
+                            <li>所在位置：北京市东城区***</li>
+                            <li>建筑面积：75m</li>
+                            <li>评估价格：245万</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>担保机构</div>
+                    <div>中根资产管理有限公司</div>
+                </div>
+                <div>
+                    <div>风控点评</div>
+                    <div></div>
+                </div>
+                <div>
+                    <div>相关资料</div>
+                    <div>
+                        <ul>
+                            <li><span></span><span>身份证</span></li>
+                            <li><span></span><span>房产证</span></li>
+                            <li><span></span><span>担保函</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--投资记录-->
+            <div class="posMoneyTT">
+                <div class="posMoneyTouZi">
+                    <div>
+                        <ul>
+                            <!--width324px-->
+                            <li>用户</li>
+                            <li>投资金额</li>
+                            <li>投资时间</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="posMoneyTouZiA">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="moneyList"  id="moneyList">
+                    <div class="moneyPage">
+                        <div class="bgPink moneyPageL">上一页</div>
+                        <!--<div>-->
+                        <ul>
+                            <li class="bgNum">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                        </ul>
+                        <!--</div>-->
+                        <div class="bgPink moneyPageR">下一页</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--登录-->
+<div class="sign_on">
+    <div class="sign_in">
+        <div class="sign_top">登录</div>
+        <div class="sign_close"></div>
+        <div class="sign_foot">
+            <div class="sign_footA">
+                <div class="sign_footB sign_footD sign_phone"><input type="tel" placeholder="手机号"></div>
+                <div class="sign_footC"></div>
+            </div>
+            <div class="sign_footA">
+                <div class="sign_footB sign_footD sign_footE sign_pass"><input type="password" placeholder="密码"></div>
+                <div class="sign_footC">您输入的密码有误</div>
+            </div>
+            <div class="sign_footE">
+                <div class="sign_footA">
+                    <div class="sign_footB"><input type="text" placeholder="不区分大小写"></div>
+                    <div class="sign_fooC">验证码错误</div>
+                </div>
+                <div class="sign_footF"></div>
+            </div>
+            <div class="sign_down">登录</div>
+            <div class="sign_in_down">
+                <div class="redNum">注册领活动本金</div>
+                <div class="queNum">忘记密码</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--实名认证-->
+<div class="trueName">
+    <div class="name_in">
+
+        <div class="sign_top">实名认证</div>
+        <div class="sign_close"></div>
+        <div class="trueNameFoot">
+            <div class="trueNameA">
+                <div>真实姓名：</div>
+                <div><input type="text"></div>
+            </div>
+            <div class="trueNameA">
+                <div>身份证号：</div>
+                <div><input type="text"></div>
+            </div>
+
+            <div class="sign_down">立即认证</div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

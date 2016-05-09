@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/01.css">
+    <style>
+        .trueName {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .name_in {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -121px 0 0 -209px;
+            width: 418px;
+            height: 242px;
+            border-radius: 5px;
+            background: #ffffff;;
+        }
+
+        .sign_top {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #ff9696;
+            color: #ffffff;
+            font-size: 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .sign_close {
+            position: absolute;
+            top: 8px;
+            left: 374px;;;
+            width: 28px;
+            height: 28px;
+            background: url("img/close.png") no-repeat;
+        }
+
+        .trueNameA {
+            margin-bottom: 25px;
+            overflow: hidden;
+            width: 350px;;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .trueNameA div {
+            float: left;
+        }
+
+        .trueNameA div:nth-child(2) {
+            padding: 0 2px;
+            width: 256px;
+            height: 37px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+
+        .trueNameA div:nth-child(2) input {
+            width: 256px;
+            height: 33px;
+            border: none;;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .sign_down {
+            height: 40px;
+            line-height: 40px;
+            background: #f4b942;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .trueNameFoot {
+            width: 345px;;
+            padding: 20px 35px;
+        }
+    </style>
+</head>
+<body>
+<div class="trueName">
+    <div class="name_in">
+
+        <div class="sign_top">实名认证</div>
+        <div class="sign_close"></div>
+        <div class="trueNameFoot">
+            <div class="trueNameA">
+                <div>真实姓名：</div>
+                <div><input type="text"></div>
+            </div>
+            <div class="trueNameA">
+                <div>身份证号：</div>
+                <div><input type="text"></div>
+            </div>
+
+            <div class="sign_down">立即认证</div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

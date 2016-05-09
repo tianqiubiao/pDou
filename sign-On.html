@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/01.css">
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sign_on {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .sign_on .sign_in {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -162px 0 0 -208px;
+            width: 415px;
+            height: 325px;
+            border-radius: 5px;
+            background: #ffffff;;
+        }
+
+        .sign_on .sign_in .sign_top {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #ff9696;
+            color: #ffffff;
+            font-size: 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .sign_on .sign_in .sign_close {
+            position: absolute;
+            top: 8px;
+            left: 374px;;;
+            width: 28px;
+            height: 28px;
+            background: url("img/close.png") no-repeat;
+        }
+
+        .sign_on .sign_in .sign_foot {
+            /*height:285px;*/
+            padding: 17px 34px;
+        }
+
+        .sign_on .sign_in .sign_foot .sign_footA {
+            position: relative;
+            height: 60px;
+
+
+        }
+
+        .sign_on .sign_in .sign_foot .sign_footA .sign_footB {
+            height: 40px;;
+        }
+
+
+
+        .sign_on .sign_in .sign_footA  .sign_footC {
+            display: none;
+            position: absolute;
+            top: 45px;
+            width: 300px;
+            height: 15px;
+            line-height: 15px;
+            font-size: 10px;
+            color: red;;
+        }
+
+        .sign_on .sign_in .sign_foot .sign_down {
+            height: 40px;
+            line-height: 40px;
+            background: #f4b942;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .sign_in_down {
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .sign_in_down div {
+            float: left;
+        }
+        .sign_in_down div:nth-child(2){
+           float: right;
+        }
+        .sign_in .sign_foot .sign_footA .sign_footD{
+            overflow: hidden;
+            border:1px solid #CCCCCC;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;;;;
+
+
+        }
+
+        .sign_on .sign_in .sign_foot .sign_footA .sign_footD input {
+            margin: 0 auto;
+            height: 40px;
+            width: 300px;
+            border:none;
+        }
+        input:focus{
+            outline: none;
+        }
+        .sign_in .sign_foot .sign_footA .sign_footD input{
+           float: right;
+
+        }
+        .sign_in .sign_foot .sign_footE {
+            overflow: hidden;
+
+        }
+        .sign_in .sign_foot  .sign_footE .sign_footA, .sign_in .sign_foot  .sign_footE .sign_footF {
+            float: left;
+        }
+        .sign_in .sign_foot .sign_footE .sign_footA .sign_footB{
+            padding-left: 2px;
+            width: 240px;;
+            height: 40px;;
+            border:1px solid #CCCCCC;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;;;;
+        }
+        .sign_in .sign_foot .sign_footE .sign_footA .sign_footB input{
+            margin: 0 auto;
+            height: 40px;
+            width: 235px;
+            border:none;
+        }
+        .sign_in .sign_foot .sign_footE .sign_footF{
+            margin-left: 10px;
+            width: 90px;
+        height: 40px;;;
+        border:1px solid #CCCCCC;
+        }
+        .sign_in .sign_foot .sign_footE .sign_footA .sign_fooC{
+            display: none;
+            font-size: 10px;
+            color: red;;
+        }
+        .sign_phone{
+            background:url("img/sign_n.jpg")  no-repeat;
+        }
+        .sign_pass{
+            background:url("img/sign_o.png")  no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="sign_on">
+    <div class="sign_in">
+        <div class="sign_top">登录</div>
+        <div class="sign_close"></div>
+        <div class="sign_foot">
+            <div class="sign_footA">
+                <div class="sign_footB sign_footD sign_phone"><input type="tel" placeholder="手机号"></div>
+                <div class="sign_footC"></div>
+            </div>
+            <div class="sign_footA">
+                <div class="sign_footB sign_footD sign_footE sign_pass"><input type="password" placeholder="密码"></div>
+                <div class="sign_footC">您输入的密码有误</div>
+            </div>
+            <div class="sign_footE">
+                <div class="sign_footA">
+                    <div class="sign_footB"><input type="text" placeholder="不区分大小写"></div>
+                    <div class="sign_fooC">验证码错误</div>
+                </div>
+                <div class="sign_footF"></div>
+            </div>
+            <div class="sign_down">登录</div>
+            <div class="sign_in_down">
+                <div class="redNum">注册领活动本金</div>
+                <div class="queNum">忘记密码</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
