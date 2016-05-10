@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/01.css">
+    <style>
+   
+        .wx{
+            position: relative
+        }
+        .w{
+            display: none;
+            position:absolute;
+            top: 40px;
+            left: 40px;
+            width: 200px ;
+            height: 200px;
+            border: 1px solid red
+        }
+        .wx:hover .w{
+            display: block;
+
+        }
+
+    </style>
 </head>
 <body>
 <div class="top">
     <div class="topNav">
         <ul>
             <li><span><img src="img/kftel.png" alt="客服电话"></span>客服电话:<a href="tel:400-859-9090">400-859-9090</a></li>
-            <li><span><img src="img/weixin.png" alt="客服微信">  </span>客服微信</li>
+            <li  class="wx"><span><img src="img/weixin.png" alt="客服微信"></span>客服微信 <img src="" alt=""  class="w"></li>
             <li><span><img src="img/app.png" alt="app"></span>P兜APP</li>
-            <li>注册 <span><img src="img/zcimg.png" alt="注册"><p>领活动本金</p></span></li>
+             <li><a href="register.html" target="_blank">注册</a><span><img src="img/zcimg.png" alt="注册"><p>领活动本金</p></span></li>
             <li>登录</li>
-            <li>帮助中心</li>
+            <li><a href="helping.html" target="_blank">帮助中心</a></li>
         </ul>
     </div>
 </div>

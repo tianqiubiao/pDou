@@ -39,7 +39,7 @@ html, body {
 
 .top .topNav ul {
     line-height: 40px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
 
 }
@@ -82,7 +82,22 @@ html, body {
     top: 5px;;
 
 }
+.wx{
+    position: relative
+}
+.w{
+    display: none;
+    position:absolute;
+    top: 40px;
+    left: 40px;
+    width: 160px ;
+    height: 160px;
+    border: 1px solid #EEEEEE;
+}
+.wx:hover .w{
+    display: block;
 
+}
 .top .topNav ul li:nth-child(4) span {
     position: relative;
 }
@@ -1039,7 +1054,12 @@ margin-bottom: 19px;
 .bglightGreen {
     background: #cdf0f5;
 }
-
+.bgccc{
+    background: #CCCCCC;
+}
+.bgeee{
+    background: #EEEEEE;
+}
 /*文字颜色*/
 .redNum {
     color: #f56478;

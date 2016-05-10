@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="head">
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/01.css">
-<body>
+    <link rel="stylesheet" href="css/sign_in.css">
+</head>
+<body id="A0">
 <!--顶部-->
 <div class="top">
     <div class="topNav">
@@ -12,8 +14,8 @@
             <li><span><img src="img/kftel.png" alt="客服电话"></span>客服电话:<a href="tel:400-859-9090">400-859-9090</a></li>
             <li><span><img src="img/weixin.png" alt="客服微信">  </span>客服微信</li>
             <li><span><img src="img/app.png" alt="app"></span>P兜APP</li>
-            <li>注册 <span><img src="img/zcimg.png" alt="注册"><p>领活动本金</p></span></li>
-            <li>登录</li>
+            <li class="id_zh">注册 <span><img src="img/zcimg.png" alt="注册"><p>领活动本金</p></span></li>
+            <li class="sign" >登录</li>
             <li>帮助中心</li>
         </ul>
     </div>
@@ -40,9 +42,9 @@
             <div class="bannerRzLio">
 
                 <div>年化收益率的定期理财产品</div>
-                <div>注册领活动本金</div>
+                <div  class="id_zh">注册领活动本金</div>
             </div>
-            <div class="bannerRzRio">
+            <div class="bannerRzRio sign">
                 已有账号?马上登录
             </div>
         </div>
@@ -478,6 +480,28 @@
         </div>
     </div>
 </div>
+<div class="sign_on">
 
+</div>
+<div class="trueName"></div>
+<script src="js/jquery.min.js" ></script>
+<!--<script src="sign_in.js"></script>-->
 </body>
 </html>
+<script>
+
+        var a=document.createElement("script");
+        a.src="js/sign_in.js";
+        $('.head')[0].appendChild(a);
+
+if($('.sign').text()==='登录'||'已有账号?马上登录'){
+    $(".sign").click(function(){
+        sign_in();
+        $('.sign_on').css('display','block');
+    })
+}
+
+
+
+
+</script>

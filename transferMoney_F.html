@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*背颜色*/
+
+        .bgNum {
+            background: #f6ebed;
+        }
+
+        .bgGrey {
+            background: #cccccc;
+        }
+
+        .bgOrange {
+            background: #ff8542;
+            color:white;
+        }
+
+        .bgPink {
+            background: #f77f96;
+        }
+
+        .bgYellow {
+            background: #f4b942;
+        }
+
+        .bgGreen {
+            background: #6ed3d6;
+        }
+
+        .bglightGreen {
+            background: #cdf0f5;
+        }
+
+        /*文字颜色*/
+        .redNum {
+            color: #f56478;
+        }
+
+        .yellowNum {
+            color: #f4b942;
+        }
+
+        .lightGreenNum {
+            color: #6ed3d6;
+        }
+
+        .lightOrangeNum {
+            color: #f5c25a;
+        }
+
+        .greenNum {
+            color: #57d090;
+        }
+
+        .queNum {
+            color: #7ddef7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+         .moneyT {
+            width: 100%;
+        }
+
+          .moneyT {
+            width: 100%;;
+        }
+
+        .money {
+            background: #f9f9f9;
+        }
+
+         .moneyT {
+            background: #ffffff;
+        }
+
+         .moneyTop,  .moneyT .moneyOuter,  .moneyCenter,.sellMoney .sellTop {
+            width: 1100px;
+            margin: 0 auto;;
+        }
+
+         .moneyCenter {
+            color: #ffffff;
+        }
+         .moneyTop,.sellMoney{
+            height: 100px;
+            line-height: 100px;
+            font-size: 20px;;
+        }
+         .moneyTop div ,.sellMoney .sellTop div{
+            display: inline-block;
+            width: 32.3%;
+        }
+
+         .moneyTop div span ,.sellMoney .sellTop div span{
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+         .moneyTop div:nth-child(1),.sellMoney .sellTop div:nth-child(1){
+            text-align: left;
+        }
+
+         .moneyTop div:nth-child(2) ,.sellMoney .sellTop div:nth-child(2){
+            text-align: center;
+        }
+
+         .moneyTop div:nth-child(3) ,.sellMoney .sellTop div:nth-child(3){
+            text-align: right;
+        }
+
+        .moneyT {
+            border-top: 1px solid #d5d5d5;
+            border-bottom: 1px solid #d5d5d5;
+        }
+
+         .moneyT .moneyOuter div {
+            font-size: 14px;
+            height: 45px;
+
+        }
+
+         .moneyT .moneyOuter .border {
+            border-top: 1px dashed #d5d5d5;
+            border-bottom: 1px dashed #d5d5d5;
+        }
+
+        .money .moneyT .moneyOuter div span {
+            /*line-height:75px*/
+        }
+
+        .moneyT .moneyOuter div span,  .moneyT .moneyOuter div ul {
+            display: inline-block;
+        }
+
+        .moneyT .moneyOuter div ul li {
+            display: inline-block;
+            padding: 1px 15px;
+            margin: 15px 13px;
+            border-radius: 5px
+        }
+         .moneyCenter{
+            padding: 25px 0;}
+         .moneyCenter div ul {
+            width: 100%;
+            overflow: hidden;
+            margin: 25px 0;
+            background:white;
+        }
+
+         .moneyCenter div ul Li {
+            padding: 15px 0;
+            height: 50px;
+            float: left;
+            line-height: 50px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+         .moneyCenter div ul .mCLi1 {
+            width: 195px;
+            padding-left: 30px;
+            text-align: left;
+            font-size: 16px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+         .moneyCenter div ul .mCLi2 {
+            width: 108px;
+            line-height: 25px;
+            font-size: 20px;
+        }
+
+         .moneyCenter div ul .mCLi3 {
+            width: 180px;
+            line-height: 50px;
+            font-size: 30px;
+        }
+
+         .moneyCenter div ul .mCLi3 span:nth-child(1) {
+            font-size: 45px;
+        }
+
+        .moneyCenter div ul .mCLi4 {
+            width: 112px;
+            font-size: 25px;;
+        }
+         .moneyCenter div ul .mCLi4 p span{
+            font-size: 45px
+        }
+
+         .moneyCenter div ul .mCLi5 {
+            width: 190px;
+
+        }
+
+         .moneyCenter div ul .mCLi6 {
+            position: relative;
+            top: 10px;
+            width: 65px;
+            height: 65px;;
+            padding:0;
+            margin: 0 15px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+         .moneyCenter div ul .mCLi6 span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 65px;
+            height: 65px;;
+        }
+
+         .moneyCenter div ul .mCLi6 span:nth-child(2) {
+            height:50%;
+        }
+         .moneyCenter div ul .mCLi6 span:nth-child(3){
+            font-size: 31px;
+            line-height: 65px;
+
+        }
+         .moneyCenter div ul .mCLi7 {
+            width: 170px;
+            margin-left: 15px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+
+        }
+
+         .moneyList{
+            margin:0 auto;
+            width: 1100px;
+            height:30px;
+            line-height: 30px;
+            text-align: center;;
+        }
+         .moneyList .moneyPage{
+            width: 510px;
+            margin:0 auto;;
+        }
+         .moneyList .moneyPage div{
+            display: inline-block;
+            border-radius: 3px;
+        }
+
+        .moneyList .moneyPage .moneyPageL,.moneyList .moneyPage .moneyPageR{
+            position: relative;
+            top: -10px;;
+            width: 75px;
+        }
+         .moneyList .moneyPage ul{
+
+            display: inline-block;
+            overflow: hidden;
+            border:1px solid #d5d5d5;
+            border-right: none;
+            height: 30px;;
+            background: white;
+        }
+
+         .moneyList .moneyPage ul li{
+            float: left;
+            width: 31px;
+            border-right:1px solid #d5d5d5;;
+        }
+        .mCLi3{
+            padding: 0 !important;
+            height: 82px;
+        }
+        .mCLi3 div:nth-child(2){
+            position: relative;
+            top: -20px;
+            color:#999999;
+            font-size: 14px;
+        }
+        .mCLi3 div:nth-child(2){
+
+        }
+        .mCLi5{
+            padding:0 !important;
+        }
+        .mCLi5 div:nth-child(1){
+            font-size: 45px;
+        }
+        .mCLi5 div:nth-child(2){
+            position: relative;
+            top: -15px;
+            font-size: 14px;
+        }
+        #sell .sellCenter   .mCLi6 .lcFDCO {
+            position: relative;
+            width: 210px;
+            height: 35px;
+            padding: 5px;
+            border: 2px solid #CDF0F5;}
+        #sell  .sellCenter  .mCLi6 .lcFDCO div{
+            width: 210px;
+            position: absolute;
+        }
+      #sell  .sellCenter .mCLi6{
+            position: relative;
+            top: 10px;
+            width: 234px;
+            height: 65px;
+            padding: 0;
+            margin: 0 15px 0 0;
+            overflow: hidden;
+          border-radius: 0;
+        }
+      #sell  .sellCenter .mCLi6 .lcFDCI{
+            height: 35px;
+            background: #CDF0F5;
+        }
+        #sell .sellCenter .mCLi6 .lcFDCO div {
+            width: 210px;
+            position: absolute;}
+        #sell .sellCenter .mCLi6 .lcFDCO .lcFDCI{
+            width: 210px;
+            position: absolute;
+        }
+        #sell .sellCenter  .mCLi6 .lcFDCO .lcFDCI div div {
+            width: 57%;
+            height: 35px;
+            background: #6ED3D6;
+        }
+        #sell .sellCenter  .mCLi6 .lcFDCO .lcFDCI div p{
+            position: absolute;
+            width: 210px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            font-size: 25px;
+            color: #ffffff;
+        }
+#sell .sellCenter  .mCLi2{
+    width: 108px;
+}
+        #sell .sellCenter  .mCLi3{
+            width: 165px;
+        }
+        #sell .sellCenter .mCLi5{
+            width: 157px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="sell">
+<div class="sellMoney">
+    <div class="sellTop">
+        <div>累计成交总金额： <span class="yellowNum">5.789</span>万元</div>
+        <div>累计成交笔数：<span class="greenNum">5,789</span>笔</div>
+        <div>单笔转让平均耗时：<span class="queNum">2</span>时<span class="queNum">56</span>分<span class="queNum">56</span>秒</div>
+    </div>
+</div>
+<div class="moneyT">
+    <div class="moneyOuter">
+        <div><span>项目状态：</span>
+            <ul>
+                <li class="bgOrange">全部</li>
+                <li>投标中</li>
+                <li>已结束</li>
+            </ul>
+        </div>
+        <div class="border"><span>项目期限：</span>
+            <ul>
+                <li class="bgOrange">全部</li>
+                <li>0-90天</li>
+                <li>90-180天</li>
+                <li>90-270天</li>
+                <li>270天以上</li>
+
+            </ul>
+        </div>
+        <div><span>项目收益：</span>
+            <ul>
+                <li class="bgOrange">全部</li>
+                <li>9% 以下</li>
+                <li>9-10%</li>
+                <li>10-11%</li>
+                <li>11% 以上</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="moneyCenter">
+<div class="sellCenter">
+    <ul>
+        <!--行高=50/p.length+"px"-->
+        <li class="bgGreen mCLi1"><p>定宝</p></li>
+        <li class="queNum  mCLi2"><p>按月付息</p>
+            <p>到期还本</p></li>
+        <li class="mCLi3">
+
+            <div><span class="redNum">10.01</span><span class="redNum">%</span></div>
+            <div>年化收益率</div>
+        </li>
+
+        <li class="mCLi5 lightGreenNum">
+            <div><span>180</span><span>天</span></div>
+            <div>剩余期限</div>
+        </li>
+        <li class="mCLi6">
+            <div class="lcFDCO">
+                <div class="lcFDCI">
+                    <div>
+                        <div></div>
+                        <p>50/180份</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--<span class="bgGreen" ></span><span class="bglightGreen"></span><span>50/160(份)</span>-->
+        </li>
+
+        <li class="mCLi7 bgPink"><p>立即购买</p></li>
+    </ul>
+
+</div>
+
+</div>
+</div>
+<div class="moneyList">
+    <div class="moneyPage">
+        <div class="bgPink moneyPageL">上一页</div>
+        <!--<div>-->
+        <ul>
+            <li class="bgNum">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+        <!--</div>-->
+        <div class="bgPink moneyPageR">下一页</div>
+    </div>
+</div>
+</body>
+</html>
