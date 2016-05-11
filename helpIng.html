@@ -1,0 +1,170 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<link rel="stylesheet" href="css/01.css">-->
+    <!--<link rel="stylesheet" href="css/sign_in.css">-->
+    <!--<link rel="stylesheet" href="css/pubklic_center.css">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei UI";
+        }
+
+        ul li {
+            list-style: none !important;
+            -webkit-padding-start: 0;
+        }
+
+        .top, .second, .banner, .pic, .foot, .last, .center, .sing {
+            width: 100%;
+        }
+
+        .top .topNav, .second .secondTop, .banner .bannerZC, .pic .picList, .pic #msge, .foot .footT, .last .lastT, .center .lc, .center .zr {
+            margin: 0 auto;
+            width: 1100px;;;
+        }
+
+        .top .topNav {
+            height: 40px;
+        }
+
+        .wx {
+            position: relative;
+            padding-left: 30px !important;
+            background: url("img/weixin.png") no-repeat;
+        }
+
+        .w {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid red
+        }
+
+        .wx:hover .w {
+            display: block;
+
+        }
+
+        .topNav {
+            height: 40px;
+
+            font-size: 16px;
+
+        }
+
+        .topNav:after {
+            content: "";
+
+        }
+
+        .topNav ul {
+            list-style: none;
+
+            line-height: 40px;
+
+        }
+
+        .topNav .topNavLeft {
+            float: left;
+        }
+
+        .topNav .topNavRight {
+            float: right;
+        }
+
+        .topNav ul li {
+            float: left;
+            padding: 0 10px;
+            line-height: 30px;
+            height: 30px;;
+        }
+
+        .top .topNav .topNavLeft li:nth-child(1) {
+            width: 185px;;
+        }
+
+        .top .topNav .topNavLeft li:nth-child(2) {
+            width: 70px;;
+        }
+
+        .top .topNav .topNavRight li {
+            border-right: 1px solid #eeeeee;
+        }
+
+        .top .topNav .topNavRight li:last-child {
+            border: none;
+        }
+
+        .top .topNav .topNavRight .topNavPad {
+            padding: 0;
+        }
+
+        .topNav ul li img {
+            position: relative;
+            top: 5px;;
+        }
+
+        .topNavPeople li:nth-child(1) {
+            position: relative;
+        }
+
+        .topNavPeople li p {
+            font-size: 10px;
+            position: absolute;
+            top: 2px;
+            left: 50px;
+            -moz-left: 60px;
+            -ms-left: 60px;
+
+
+        }
+
+        .to {
+            padding-left: 25px !important;
+            background: url("img/kftel.png") no-repeat;
+        }
+
+        .to1 {
+            padding-left: 25px !important;
+            background: url("img/app.png") no-repeat;
+        }
+
+        .to2 {
+            padding-right: 80px !important;
+            background: url("img/zcimg.png") no-repeat 44px;
+            /*background-position-x: 44px;*/
+
+
+        }
+    </style>
+</head>
+<body>
+<!--<p style="text-align: center;font-size: 50px">帮助中心</p>-->
+<div class="top">
+    <div class="topNav">
+        <ul class="topNavLeft">
+            <li class="to">客服电话:<a href="tel:400-859-9090">400-859-9090</a></li>
+            <li class="wx">客服微信 <img src="img/weixin.png" alt="" class="w"></li>
+        </ul>
+        <ul class="topNavRight">
+            <li class="to1">P兜APP</li>
+            <li class="topNavPad">
+                <ul class="topNavPeople">
+                    <li class="id_zh to2">注册<span><p>领活动本金</p></span></li>
+                    <li class="sign">登录</li>
+                </ul>
+            </li>
+            <li class="id_helpIng">帮助中心</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
