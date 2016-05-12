@@ -107,13 +107,13 @@
             display: block;
         }
 
-        .sing .singIn .singInR   .singInLast {
+        .sing .singIn .singInR .singInLast {
             margin: 0 auto;
             width: 292px;
             height: 42px
         }
 
-        .sing .singIn .singInR   .singInLas {
+        .sing .singIn .singInR .singInLas {
             margin: 0 auto;
             width: 299px;
             font-size: 14px;
@@ -122,7 +122,7 @@
 
         }
 
-        .sing .singIn .singInR   .singInLast a {
+        .sing .singIn .singInR .singInLast a {
             display: block;
             width: 290px;
             height: 40px;
@@ -134,12 +134,56 @@
             font-weight: 100;
         }
 
-        #sing5 {
+        .singIn     #sing5 {
             margin-bottom: 20px
         }
 
-        #sing5 a {
+        .singIn   #sing5 a {
             color: #66ccff
+        }
+
+        .singIn  #worUesr,
+        .singIn   #passW,
+        .singIn   #passWT,
+        .singIn   #trueI {
+            display: none;
+            position: absolute;
+            left: 195px;
+            width: 250px;
+            height: 13px;
+            color: red;
+            font-size: 10px;;
+        }
+
+        .singIn   #worUesr {
+            top: 75px;;
+
+        }
+
+        .singIn   #passW {
+            top: 136px;;
+        }
+
+        .singIn  #passWT {
+            top: 196px;;
+        }
+
+       .singIn #trueI {
+            top: 260px;;
+        }
+        #sing5 span{
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            width: 21px;
+            height: 21px;
+            top: 8px;
+            border: 1px solid #CCC;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .singIn  #sing5 span img{
+            display: none;
         }
     </style>
 </head>
@@ -174,12 +218,34 @@
                 <div class="singInRL">邀请码</div>
                 <div class="singInRR"><input type="text" placeholder="选填" id="sing4"></div>
             </div>
-            <div class="singInLas" id="sing5">
-                <span><input type="checkbox"></span>我已阅读并同意 <a href="">《P兜理财用户服务协议》</a>
+            <div class="singInLas  trueDisplay" id="sing5">
+                <span><img src="img/greenT.png" alt="0"></span>我已阅读并同意 <a href="javascript:;">《P兜理财用户服务协议》</a>
             </div>
-            <div class="singInLast"><a href="">注&nbsp;册</a></div>
+            <div class="singInLast true_sign_on"><a href="javascript:;">注&nbsp;册</a></div>
+            <div id="worUesr">1</div>
+            <div id="passW">2</div>
+            <div id="passWT">3</div>
+            <div id="trueI">4</div>
         </div>
     </div>
 </div>
 </body>
 </html>
+<script src="js/jquery.min.js"></script>
+<script>
+//注册|登录事件绑定移除
+        $('.trueDisplay>span').click(function() {
+            if($(this).children()[0].alt==='0'){
+                $(this).children().css('display', 'block');
+                $(this).children()[0].alt='1';
+                $('.true_sign_on').click(function(){alert(1)})
+            }else {
+                $(this).children().css('display', 'none');
+                $(this).children()[0].alt='0';
+                $('.true_sign_on').unbind('click');
+            }
+
+        })
+
+
+</script>

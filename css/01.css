@@ -186,6 +186,27 @@ html, body {
     width: 70px;
     cursor: pointer;
 }
+.banCard{
+    width: 100%;
+
+}
+.banCard .banOuter{
+    overflow: hidden;
+    width:100%;
+    margin:0 auto;;
+}
+.banCard .banOuter .banCard0 {
+    float: left;
+    display: none;
+    width:100%;
+
+}
+.navColor{
+    color: #FFE46C !important;
+}
+.navDis{
+    display: block !important;
+}
 
 .banner {
     /*position: relative;*/
@@ -937,11 +958,11 @@ margin-bottom: 19px;
     color: #6ed3d6;
 
 }
-/*登录界面*/
+/*注册界面*/
 .sing {
     width: 100%;
     height: 546px;
-    padding-top: 54px
+    padding-top: 135px
 }
 
 
@@ -1070,6 +1091,35 @@ margin-bottom: 19px;
 
 #sing5 a {
     color: #66ccff
+}
+
+#worUesr,
+#passW,
+#passWT,
+#trueI {
+    position: absolute;
+    left: 195px;
+    width: 250px;
+    height: 13px;
+    color: red;
+    font-size: 10px;;
+}
+
+#worUesr {
+    top: 75px;;
+
+}
+
+#passW {
+    top: 136px;;
+}
+
+#passWT {
+    top: 196px;;
+}
+
+#trueI {
+    top: 260px;;
 }
 /*背颜色*/
 

@@ -3,6 +3,9 @@
  */
 charset = 'uft8';
 //登录界面
+var phoneReg = /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/;
+
+
 function login() {
     var str = '';
     str += '<div class="sign_in">';
@@ -27,7 +30,7 @@ function login() {
     str += '<div class="sign_down" id="loginBtn">登录</div>';
     str += '<div class="sign_in_down">';
     str += '<div class="redNum id_zh">注册领活动本金</div>';
-    str += '<div class="queNum">忘记密码</div>';
+    str += '<div class="queNum oldPassWord">忘记密码</div>';
     str += '</div>';
     str += '</div>';
     str += '</div>';
@@ -42,28 +45,19 @@ function login() {
     //sign_tel2 密码     sign_tel2_2
     //sign_tel3 验证码   sign_tel3_3
     //手机号验证
-    var reg = /^1\d{10}$/;
-    var phoneReg = /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/;
     $('#userId').blur(function () {
-                          if (!reg.test($('#userId').val())) {
-                              $('#worUesr').css('display', 'block');
-
-                          }else {
-                              $('#worUesr').css('display', 'none');
-                          }
+                          phone()
                       }
     )
 
     $('.sign_in').keydown(function (event) {
                               if (event.keyCode === 13) {
-
                                   if (phoneReg.test($('#userId').val())) {
                                       var user = $('#userId').val();
                                       var passWord = $('#password').val();
                                       var obj = {"user": user, "password": passWord}
                                       $("#loginBtn").trigger("click");
                                   }
-
                               }
                           }
     );
@@ -72,19 +66,21 @@ function login() {
                                  var user = $('#userId').val();
                                  var passWord = $('#password').val();
                                  var obj = {"user": user, "password": passWord}
-                                 console.log(obj)
                              }
                          }
+    )
+    $('.oldPassWord').click(function () {
+                                password()
+                            }
     );
 
-    //注册
+//注册
     $('.id_zh').click(function () {
-                          window.open('register.html')
+                          register();
                       }
     )
-
-
 }
+
 //实名认证
 function trueName() {
     var str = '';
@@ -155,11 +151,70 @@ function trueName() {
     $('#trueNameDown').click(function (e) {
 
 
-    })
+                             }
+    )
 
 
 }
-trueName()
+
+//注册页面
+function register() {
+    var str = "";
+    str += '<div class="sing">';
+    str += '<div class="sign_close"></div>';
+    str += '<div class="singIn">';
+    str += '<div class="singInL"><img src="img/sing-in.png" alt=""></div>';
+    str += '<div class="singInR">';
+    str += '<div class="singInR1">';
+    str += '<div class="singInRL"><span>*</span>注册手机号</div>';
+    str += '<div class="singInRR"><input type="tel" placeholder="您在P兜的身份凭证" id="userId"></div>';
+    str += '</div>';
+    str += '<div class="singInR1">';
+    str += '<div class="singInRL"><span>*</span>登录密码</div>';
+    str += '<div class="singInRR"><input type="text" placeholder="请设置6-12位密码" id="sing1"></div>';
+    str += '</div>';
+    str += '<div class="singInR1">';
+    str += '<div class="singInRL"><span>*</span>确认登录密码</div>';
+    str += '<div class="singInRR"><input type="text" placeholder="请确认密码" id="sing2"></div>';
+    str += '</div>';
+    str += '<div class="singInR1">';
+    str += '<div class="singInRL"><span>*</span>验证码</div>';
+    str += '<div class="singInRR"><input type="text" placeholder="不区分大小写" id="sing3">';
+    str += '<!--验证码-->';
+    str += '<div class="trueImg">';
+    str += '<div></div>';
+    str += '<div>点击换图</div>';
+    str += '</div>';
+    str += '</div>';
+    str += '</div>';
+    str += '<div class="singInR1">';
+    str += '<div class="singInRL">邀请码</div>';
+    str += '<div class="singInRR"><input type="text" placeholder="选填" id="sing4"></div>';
+    str += '</div>';
+    str += '<div class="singInLas" id="sing5">';
+    str += '<span><input type="checkbox"></span>我已阅读并同意 <a href="">《P兜理财用户服务协议》</a>';
+    str += '</div>';
+    str += '<div class="singInLast"><a href="">注&nbsp;册</a></div>';
+    str += '<div id="worUesr">1</div>';
+    str += '<div id="passW">2</div>';
+    str += '<div id="passWT">3</div>';
+    str += '<div id="trueI">4</div>';
+    str += '</div>';
+    str += '</div>';
+    str += '</div>';
+    $('.sign_on').html(str).css('display', 'block');
+    $('.sign_close').css('left', '95%').css('top', '50px');
+    $('.sign_close').click(function () {
+                               $('.sign_on').css('display', 'none')
+                           }
+    )
+    $('#userId').blur(function () {
+                          phone()
+                      }
+    );
+
+}
+
 //绑定交易列表  ：没有数据
 function my_accountList1() {
     var str = ''
@@ -172,11 +227,115 @@ function my_accountList1() {
     str += '</ul>';
     $('#my_accountList1').html(str);
 }
+//手机号验证
+function phone() {
+    if ($('#userId').val().length === 0) {
+        $('#worUesr').css('display', 'block');
+        $('#worUesr').html('请输入手机号！')
+    } else {
+        if (!phoneReg.test($('#userId').val())) {
+            $('#worUesr').css('display', 'block');
+            $('#worUesr').html('请输入正确手机号！')
+
+        } else {
+            $('#worUesr').css('display', 'none');
+        }
+    }
 
 
+}
+
+function password() {
+    var str = '';
+    str += '<div class="sign_close"></div>';
+    str += '<div class="password">';
+
+    str += '<div class="passwordTop"><span></span>  找回密码</div>';
+    str += '<div class="passwordFoot">';
+    str += '<div class="passwordFootA">';
+    str += '<div class="passwordFootB"><span>*</span>手机号码</div>';
+    str += '<div class="passwordFootC">';
+    str += '<div class="passwordFootD"><input type="tel" placeholder="请输入您的手机号码" id="userId"></div>';
+    str += '</div>';
+    str += '</div>';
+    str += '<div class="passwordFootA">';
+    str += '<div class="passwordFootB"><span>*</span>图形验证码</div>';
+    str += '<div class="passwordFootC">';
+    str += '<div class="passwordFootE"><input type="text" placeholder="不区分大小写"></div>';
+    str += '<div class="passwordFootF">';
+    str += '<div></div>';
+    str += '<div>点击换图</div>';
+    str += '</div>';
+    str += '</div>';
+    str += '</div>';
+    str += '<div class="passwordFootDown">下一步</div>';
+    str += '</div>';
+    str += '<div id="worUesr">1</div>';
+    str += '<div id="trueI">4</div>';
+    str += '</div>';
+    $('.sign_on').html(str).css('display', 'block');
+    $('.sign_close').css('left', '95%').css('top', '50px');
+    $('.sign_close').click(function () {
+                               $('.sign_on').css('display', 'none')
+                           }
+    )
+    $('#userId').blur(function () {
+                          phone()
+                      }
+    );
+    $('.passwordFootDown').click(function () {
+                                     passNext();
+                                 }
+    )
+}
+function twoPassWord(that) {
+    var firstPass = $('#firstPass').val(), secPass = $('#secPass').val();
+    var those = that.val();
+    return those.length === 0 ? that.parent().parent().parent().next().css('display', 'block').html('请输入密码') : a(those);
+    function a(those) {
+        console.log(those.length)
+        return (those.length >= 6 && those.length <= 12) ? that.parent().parent().parent().next().css('display', 'none') : that.parent().parent().parent().next().css('display', 'block').html('请输入正确密码！');
+    }
+}
+
+function passNext() {
+    var st = '';
+    st += '<div class="passwordTop"><span></span>  重置密码</div>';
+    st += '<div class="passwordFoot">';
+    st += '<div class="passwordFootA">';
+    st += '<div class="passwordFootB">账号</div>';
+    st += '<div class="passwordFootC">';
+    st += '<div class="passwordFootD" style="border: none;line-height: 40px;font-size: 30px;">18500047625</div>';
+    st += '</div>';
+    st += '</div>';
+    st += '<div class="passwordFootA">';
+    st += '<div class="passwordFootB"><span>*</span>登录密码</div>';
+    st += '<div class="passwordFootC">';
+    st += '<div class="passwordFootD"><input type="password" placeholder="请输入6-12位密码" id="firstPass"></div>';
+    st += '</div>';
+    st += '</div>';
+    st += '<div id="worUesr">1</div>';
+    st += '<div class="passwordFootA">';
+    st += '<div class="passwordFootB"><span>*</span>手机号码</div>';
+    st += '<div class="passwordFootC">';
+    st += '<div class="passwordFootD"><input type="password" placeholder="请确认密码" id="secPass"></div>';
+    st += '</div>';
+    st += '</div>';
+    st += '<div id="trueI">4</div>';
+    st += '<div class="passwordFootDown">确认修改</div>';
+    st += '</div>';
 
 
+    $('.password').html(st);
+    $('#worUesr').css('top', '267px');
+    $('#trueI').css('top', '327px');
+    $('input[type="password"]').blur(function (e) {
+                                         that = $(this);
+                                         return twoPassWord(that)
+                                     }
+    )
 
+}
 
 
 

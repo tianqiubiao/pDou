@@ -7,24 +7,6 @@
     <link rel="stylesheet" href="css/sign_in.css">
     <link rel="stylesheet" href="css/pubklic_center.css">
     <style>
-   
-        .wx{
-            position: relative
-        }
-        .w{
-            display: none;
-            position:absolute;
-            top: 40px;
-            left: 40px;
-            width: 200px ;
-            height: 200px;
-            border: 1px solid red
-        }
-        .wx:hover .w{
-            display: block;
-
-        }
-
     </style>
 </head>
 <body>
@@ -805,20 +787,21 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/sign_in.js"></script>
 <script>
-    if ($('.sign').text() === '登录' || '已有账号?马上登录') {
+
         $(".sign").click(function () {
                              login();
+//                             register();
                              $('.sign_on').css('display', 'block');
                          })
-    }
+
     //注册页面
     $('.id_zh').click(function () {
-        window.open('register.html')
+//        window.open('register.html')
+        register();
     })
-$('.id_helpIng').click(function(){
+  $('.id_helpIng').click(function(){
     window.open('helpIng.html')
 })
-
 
 
     code('banCard0','bandCard');
