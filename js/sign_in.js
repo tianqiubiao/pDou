@@ -297,7 +297,7 @@ function twoPassWord(that) {
         return (those.length >= 6 && those.length <= 12) ? that.parent().parent().parent().next().css('display', 'none') : that.parent().parent().parent().next().css('display', 'block').html('请输入正确密码！');
     }
 }
-
+//重置密码
 function passNext() {
     var st = '';
     st += '<div class="passwordTop"><span></span>  重置密码</div>';
