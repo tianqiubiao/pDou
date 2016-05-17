@@ -865,7 +865,7 @@ margin-bottom: 19px;
     position: relative;
     margin-top: 25px;
     width: 100%;
-    height: 209px;
+    height: 160px;
 }
 
 .center .zr .lcF .lcFDC .lcFDCO {
@@ -1019,11 +1019,12 @@ margin-bottom: 19px;
 }
 
 .sing .singIn .singInR .singInR1 .singInRR input {
-    width: 260px;
+    width: 250px;
+    padding-left: 10px;
 }
 
 .sing .singIn .singInR .singInR1 .singInRR #sing3 {
-    width: 160px;
+    width: 150px;
 }
 
 .sing .singIn .singInR .singInR1 .trueImg {
@@ -1128,7 +1129,7 @@ margin-bottom: 19px;
 }
 
 .bgGrey {
-    background: #cccccc;
+    background: #cccccc !important;
 }
 
 .bgOrange {
@@ -1182,18 +1183,9 @@ margin-bottom: 19px;
     color: #7ddef7;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-html, body {
-    width: 100%;
-}
 
-ul li {
-    list-style: none;
-}
+
 
 .buy, .moneyT {
     width: 100%;
@@ -1412,9 +1404,7 @@ overflow: hidden;
     background: #f6ebed;
 }
 
-.bgGrey {
-    background: #cccccc;
-}
+
 
 .bgOrange {
     background: #ff8542;
@@ -1462,18 +1452,8 @@ overflow: hidden;
     color: #7ddef7;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-html, body {
-    width: 100%;
-}
 
-ul li {
-    list-style: none;
-}
 
 .moneyT {
     width: 100%;
@@ -1766,4 +1746,891 @@ ul li {
 #sell{
     background: #F9F9F9;
 }
+
+.posrel{
+    position: relative !important;
+
+    top: 20px;;
+}
+.lcFDQ{
+    height:80px ;
+    overflow: hidden;
+    font-size: 16px;
+}
+.lcFDQ .lcFDCQT{
+    float: left;
+    margin-left: 15px;
+}
+.lcFDQ .lcFDQF{
+    float: right;
+    margin-right: 15px;
+}
+.lcFDQ .lcFDCQT span, .lcFDQ .lcFDQF span{
+    font-size: 35px; ;
+}
+.lcFDQ .lcFDCQT div:nth-child(1){
+    color: #f56478;
+}
+.lcFDQ .lcFDQF div:nth-child(1){
+    color: #6ed3d6;
+}
+input{
+    outline: none!important;
+}
+
+/*登录图表*/
+#sing5 span{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 21px;
+    height: 21px;
+    top: 8px;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.singIn  #sing5 span img{
+    display: none;
+}
+
+
+
+
+.bank_meg {
+    margin-top: 25px;
+    width: 875px;
+    height: 185px;
+}
+
+.bank_meg .bank_msg {
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+}
+
+.bank_meg .bank_list {
+    overflow: hidden;
+    border: 1px solid #f5c259;
+    border-radius: 5px;
+}
+
+.bank_list ul {
+    float: left;
+    height: 122px;
+    border-left: 1px solid #CCCCCC;
+}
+
+.bank_list ul li {
+    list-style: none;
+    width: 176px;
+    height: 39px;
+    line-height: 38px;
+    border-bottom: 1px solid #CCCCCC;
+    text-align: center;
+}
+
+.bank_list ul li:nth-child(1) {
+    background: rgb(238, 238, 238);
+}
+
+.bank_list ul li:last-child {
+    border-bottom: none;
+}
+
+.bank_list .bank_last li:nth-child(1) {
+    width: 342px;
+    border-top-right-radius: 5px;
+}
+
+.bank_list .bank_last li:nth-child(2) {
+    padding: 0 18px;
+    padding-top: 5px;
+    width: 306px;
+    height: 79px;
+    line-height: 22px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.bank_list .bank_first {
+    border-left: none;
+}
+
+.bank_first li:nth-child(1) {
+    border-top-left-radius: 5px;
+}
+/*转让结束*/
+.absYesBuy{
+    position: relative;
+    padding-top: 70px;
+    width: 279px;
+    height: 180px;
+    font-size: 17px;;
+}
+.absYesBuy div{
+    text-align: left;
+
+}
+.absYesBuy div span{
+    font-size: 25px;
+}
+.absYesBuy div:nth-child(1) span{
+    color: #6ed3d6;
+}
+/*转让选项卡*/
+.posMoneyFoot{
+    position: relative;
+    margin:0 auto;
+    width: 1100px;
+    height: 700px;;
+}
+.posMoneyFoot .posMoneyFootTop{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 35px;
+;
+}
+.posMoneyFoot .posMoneyFootTop div{
+    position: absolute;
+    left: 64px;
+    width: 146px;
+    height:100%;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    background: #ffbdce;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom:2px solid  #f77f96 ;
+}
+.posMoneyFoot .posMoneyFootTop div:nth-child(2){
+    left: 220px;;
+}
+.posMoneyFoot .posMoneyFootTop div.posMoneyFootTopBg{
+    background: #f77f96;
+}
+.posMoneyFoot .posMoneyFootA{
+    position:absolute;
+    top: 35px;;
+    width:1035px;
+    padding:0 0 0 65px;
+    height: 640px;
+    border-top: 2px solid  #f77f96;
+}
+
+.posMoneyFoot .posMoneyFootA .posMoneyJJ div div:nth-child(1){
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyJJ div div:nth-child(2) ul{
+    overflow: hidden;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyJJ div div:nth-child(2) ul li{
+    overflow: hidden;
+    float: left;
+    width: 345px;
+    color: #999999;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyJJ div div:nth-child(2) ul li span{
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyJJ div div:nth-child(2) ul li span:nth-child(1){
+    width: 23px;
+    height: 23px;;
+    background: url("../img/posYellowT.png") no-repeat;
+    background-position-y: 3px;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyJJ div div:nth-child(2) ul li span:nth-child(2){
+
+    color: #66CCFF;
+    border-bottom: 1px solid #66CCFF;
+}
+
+.posMoneyFoot .posMoneyFootA .posMoneyJJ div div p{
+    width: 865px;
+    line-height: 25px;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyTT{
+    position: absolute;
+    height:100%;
+    left: 0px;
+    text-align: center;
+}
+
+.posMoneyFoot .posMoneyFootA .posMoneyTT .posMoneyTouZi{
+    padding:0 64px;
+    background: #fff0f4;
+    height:50px;
+    line-height: 50px;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyTT .posMoneyTouZi div{
+    width: 972px;;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyTT  .posMoneyTouZiA{
+    padding:0 66px;
+    height:50px;
+    line-height: 50px;
+
+}
+
+.posMoneyFoot .posMoneyFootA .posMoneyTT  div ul{
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+}
+.posMoneyFoot .posMoneyFootA .posMoneyTT  div ul li{
+    float: left;
+    width: 322px;;
+}
+
+.posMoneyFoot .posMoneyFootA .posMoneyTT .posMoneyTouZi div ul li:nth-child(2){
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+.absMoney .absMoneyTop{
+    margin:0 auto;
+    width: 1100px;;
+}
+
+.posMoneyTopT {padding:0 40px;
+    height: 49px;
+    line-height: 45px;
+    overflow: hidden;
+}
+.posMoneyTopT div:nth-child(1) {
+    font-size: 23px;
+    float: left;
+}
+.posMoneyTopT div:nth-child(2) {
+    font-size: 14px;
+    line-height: 70px;
+    float: right;
+    color: #f77f96
+}
+.absMoneyTopF{
+    margin-bottom: 40px;
+    padding: 18px 0 15px 40px;
+    border-top: 1px solid #CCCCCC;
+    width: 1060px;
+    overflow: hidden;
+}
+.absMoneyTopF .absMoneyFootLeft,.absMoneyTopF .absMoneyFootRight{
+    float: left;
+    height: 220px;;
+}
+.absMoneyTopF .absMoneyFootLeft{
+    width:725px;
+    border-right: 1px solid #EEEEEE;
+}
+.absMoney .absTop{
+    overflow: hidden;
+}
+.absMoney .absTop .absTopA{
+    float: left;
+
+}
+.absMoney .absTop .absTopA .absTopB{
+    height: 70px;
+    color:#666666;    font-size: 10px;    line-height: 40px;
+}
+.absMoney .absTop .absTopA .absTopC{
+    height:76px;
+    font-size: 22px;
+}
+
+.absMoney .absTop .absTopD{
+    width: 185px; color: #f77f96;;
+}
+
+.absMoney .absTop .absTopE{
+    width: 165px;color: #f5c25a;;
+}
+
+.absMoney .absTop .absTopF{
+    width: 115px;
+    color: #6ed3d6;
+}
+
+.absMoney .absTop .absTopG{
+    width: 260px;;
+}
+.absMoney .absTop .absTopD span,.absMoney .absTop .absTopE span,.absMoney .absTop .absTopF span{
+    font-size: 34px;
+}
+.absMoney .absTop .absTopG div{
+    height:40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666666;
+}.absMoneyFootRight{
+     margin-left: 55px;;
+ }
+.absMoneyFootRight{
+    font-size: 14px;
+}
+
+.absFoot{
+    height: 60px;
+;
+}
+.absFoot .absFootA{
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+
+}
+.absFoot .absFootA div{
+    float: left;
+}
+.absFoot .absFootA div:nth-child(1){
+    width: 70px;;
+}
+.absMoneyFootRight .absFootB{
+    height: 39px;
+    overflow: hidden;
+}
+.absMoneyFootRight .absFootC{
+    float: left;overflow: hidden;
+    width: 120px;
+    line-height: 40px;
+    background: #6ed3d6;
+    color: white;
+    text-align: center;
+}
+.absMoneyFootRight .absFootC div{
+    float: left;
+    height: 40px;;
+}
+.absMoneyFootRight .absFootC div:nth-child(1),.absMoneyFootRight .absFootC div:nth-child(3){
+    font-size: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.absMoneyFootRight .absFootC input{
+
+    height:33px;
+    width:75px;
+}
+.absMoneyFootRight .absFootD{
+    height:53px;
+    line-height: 35px;
+
+}
+
+.absMoneyFootRight .absFootE{
+    text-align: center;
+    width: 220px;
+    height:35px;
+    line-height: 35px;
+    color: white;
+    border-radius: 5px;
+    background:#f77f96 ;
+}
+.absMoneyFootRight .absFootA div span:nth-child(1),.absMoneyFootRight .absNoBay div span:nth-child(1){
+    font-size: 22px;
+}
+.absMoneyFootRight .absNoBay{
+    margin-top: 35px;
+}
+.absMoneyFootRight .absNoBay div{
+    height: 30px;
+    line-height: 30px;
+}
+.absMoneyFootRight .absNoBay .absNoA{
+    margin-top: 25px;
+    width: 220px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background:#f5c25a ;
+    border-radius: 5px;
+    color:white;
+}
+.absMoneyFootLeft .absTopH{
+    padding-top: 26px;
+
+    overflow: hidden;
+    width: 675px;
+    height: 45px;
+    border-top: 1px dashed#EEEEEE;
+}
+.absMoneyFootLeft .absTopH div{
+    float: left;
+}
+.absMoneyFootLeft .absTopH .absTopHa{
+    float: right;
+}
+.absMoneyFootLeft .absTopH div p{
+    color: #000;
+}
+.absMoneyFootLeft .absTopH div p span{
+    color:#666666;
+}
+.absMoneyFootLeft .absTopH .absTopHa span{
+    display:inline-block;
+    border-radius: 3px;
+    width: 28px;
+    height: 20px;
+    text-align: center;;
+    color:white;
+    background: #6ed3d6;
+}
+.posMoney {
+    width: 1100px;
+    margin: 0 auto;;
+}
+
+.posMoneyTopT {
+    height: 49px;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.posMoney .posMoneyTop .posMoneyTopT div:nth-child(1) {
+    font-size: 23px;
+    float: left;
+}
+
+.posMoney .posMoneyTopF {
+    padding: 0 40px;
+    padding-top: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL {
+    float: left;
+    /*overflow: hidden;*/
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA {
+    overflow: hidden;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1,
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2,
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3,
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 {
+    float: left;
+    height: 170px;;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 {
+    width: 180px;;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 {
+    width: 130px;;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 {
+    width: 255px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 {
+    width: 105px;;;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(1),
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 div:nth-child(1) {
+    height: 85px;
+    line-height: 85px;
+    font-size: 14px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(2),
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 div:nth-child(2) {
+    height: 55px;
+    font-size: 30px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 div {
+    font-size: 16px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 div:nth-child(1) {
+    height: 85px;
+    line-height: 85px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 div:nth-child(2) {
+    height: 35px;
+    line-height: 35px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 .posMoneyTopA4m {
+    position: relative;
+    top: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 101px;
+    height: 101px;;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 . div {
+
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 .posMoneyTopA4m div:nth-child(1) {
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    background: #CDF0F5;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 .posMoneyTopA4m div:nth-child(2) {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 88px;
+    height: 88px;;;
+    background: #6ed3d6;
+    border-radius: 50%;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA4 .posMoneyTopA4m div:nth-child(3) {
+    position: absolute;
+    line-height: 101px;
+    font-size: 20px;
+    color: #ffe98d;
+    text-align: center;
+    width: 101px;
+    height: 101px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopA {
+    overflow: hidden;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopB {
+    width: 675px;
+    border-top: 1px dashed #CCCCCC;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopB .posMoneyTopLB, .posMoney .posMoneyTopF .posMoneyTopB .posMoneyTopLC {
+    float: left;
+    font-size: 16px;
+    line-height: 55px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopB .posMoneyTopLC {
+    float: right;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopR {
+    float: left;
+    margin-left: 50px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopR .posMoneyTopRA {
+
+    padding: 0 0 0 68px;
+    width: 225px;
+    height: 215px;
+    border-left: 1px solid #EEEEEE;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopR .posMoneyTopRA div:nth-child(2) {
+    line-height: 35px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(2) span {
+    color: #f5c25a;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(2) span:nth-child(1),
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA1 div:nth-child(2) span:nth-child(2) {
+    color: #f77f96;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 div:nth-child(2) span {
+    color: #6ed3d6;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA2 div:nth-child(2) span:nth-child(2) {
+    font-size: 16px;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopA .posMoneyTopA3 div span {
+    color: #f77f96;
+}
+
+.posMoney .posMoneyTop .posMoneyTopT {
+    padding: 0px 40px;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+.posMoney .posMoneyTop .posMoneyTopT div:nth-child(2) {
+    float: right;
+    color: #f77f96;
+}
+
+.posMoney .posMoneyTopF .posMoneyTopL .posMoneyTopB p span {
+    color: #999999;
+}
+/*分页列表*/
+#moneyList{
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 15px;
+}
+#moneyList .moneyPage{
+    width: 510px;
+    margin:0 auto;;
+}
+#moneyList .moneyPage div{
+    display: inline-block;
+    border-radius: 3px;
+}
+
+#moneyList .moneyPage .moneyPageL,.moneyList .moneyPage .moneyPageR{
+    position: relative;
+    top: -10px;;
+    width: 75px;
+}
+#moneyList .moneyPage ul{
+
+    display: inline-block;
+    overflow: hidden;
+    border:1px solid #d5d5d5;
+    border-right: none;
+    height: 30px;;
+    background: white;
+}
+
+#moneyList .moneyPage ul li{
+    float: left;
+    width: 31px;
+    border-right:1px solid #d5d5d5;;
+}
+/*密码*/
+
+/*重置密码*/
+.password {
+    position: relative;
+    margin: 30px auto;
+
+    width: 1100px;
+    height: 530px;;;
+}
+
+.password .passwordTop {
+    height: 95px;
+    font-size: 25px;
+    line-height: 95px;
+    color: #6ed3d6;
+}
+
+.password .passwordTop span {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 5px;
+    height: 24px;
+    background: #f4b942;
+}
+
+.password .passwordFoot {
+
+    margin-top: 70px;
+}
+
+.password .passwordFoot span {
+    color: #F77F96;
+}
+
+.password .passwordFoot .passwordFootA {
+    margin:0 auto;
+    width: 416px;
+    height: 40px;
+    margin-bottom: 20px;;
+}
+
+.password .passwordFoot .passwordFootA:after {
+    content: '';
+}
+
+.password .passwordFoot .passwordFootA div {
+    float: left;
+}
+
+.password .passwordFoot .passwordFootA div input {
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootB {
+    float: left;
+    width: 120px;
+    height: 42px;
+    margin-right: 20px;
+    line-height: 42px;
+    text-align: right;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootC {
+    float: left;
+
+    height: 44px;;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootD {
+    padding-left: 10px;
+    width: 252px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootD input {
+    height: 40px;
+    width: 240px;;;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootE {
+    margin-right: 10px;
+    padding-left: 10px;
+    width: 152px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootE input {
+    height: 40px;
+    width: 140px;;;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootF {
+    position: relative;
+    width: 92px;
+    height: 42px;
+    overflow: hidden;;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootF div {
+    width: 90px;
+    height: 40px;;;
+}
+
+.password .passwordFoot .passwordFootA .passwordFootF div:nth-child(2) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, .3);
+}
+
+.password .passwordFoot .passwordFootA .passwordFootF:hover div:nth-child(2) {
+    display: block;
+}
+
+.password .passwordFootDown {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    background: #f4b942;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
+}
+
+.password #worUesr,
+.password #trueI {
+    position: absolute;
+    width: 260px;;
+    height: 18px;
+    font-size: 14px;
+    color: red;
+    line-height: 18px;
+}
+
+.password #worUesr {
+
+    top: 267px;
+    left: 490px;
+}
+
+.password #trueI {
+
+    top: 330px;
+    left: 490px;
+}
+#worUesrA{
+    top: 207px;
+    left: 490px;;;
+}
+#trueIA{
+    top: 265px;
+    left: 490px;;;
+}
+.posMoneyTopR .posMoneyTopRA .absFootB{
+    width: 220px;
+    height: 35px;;;
+    background: #6ed3d6;
+}
+.posMoneyTopRA .absFootC{
+    clear: both;
+}
+.posMoneyTopRA .absFootC div {
+    float: left;
+    width: 20px;
+    height:35px ;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;;;
+}
+.posMoneyTopRA .absFootC div:nth-child(2){
+    width: 180px;
+}
+.posMoneyTopRA .absFootC div:nth-child(2) input{
+    width: 160px;
+    height: 33px;;
+    padding-left: 20px;
+    border:none;;;
+}
+.posMoneyTopRA .absFootD{
+    margin:10px 0 15px 0;
+}
+.posMoneyTopRA .absFootE{
+    width:220px;
+    height: 35px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    line-height:35px;
+    border-radius: 5px;
+    background: #f77f96;
+}
+
+
+.posMoneyTopRA div img{
+    margin-top: 15px;;
+}
+
+
+
+
+
+
+
+
+
 

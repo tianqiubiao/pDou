@@ -70,13 +70,19 @@
                 <div class="singInRL">邀请码</div>
                 <div class="singInRR"><input type="text" placeholder="选填" id="sing4"></div>
             </div>
-            <div class="singInLas" id="sing5">
-                <span><input type="checkbox"></span>我已阅读并同意 <a href="">《P兜理财用户服务协议》</a>
+            <div class="singInLas  trueDisplay" id="sing5">
+                <span><img src="img/greenT.png" alt="0"></span>我已阅读并同意 <a href="javascript:;">《P兜理财用户服务协议》</a>
             </div>
-            <div class="singInLast"><a href="">注&nbsp;册</a></div>
+            <div class="singInLast true_sign_on"><a href="javascript:;">注&nbsp;册</a></div>
+            <div id="worUesr"></div>
+            <div id="passW"></div>
+            <div id="passWT"></div>
+            <div id="trueI"></div>
         </div>
     </div>
 </div>
+
+
 <!--foot-->
 <div style="width:100%;position: relative;">
 
@@ -172,5 +178,23 @@
     </div>
 </div>
 
+<script src="js/jquery.min.js"></script>
+<script>
+    //注册|登录事件绑定移除
+    $('.trueDisplay>span').click(function() {
+        if($(this).children()[0].alt==='0'){
+            $(this).children().css('display', 'block');
+            $(this).children()[0].alt='1';
+            $('.true_sign_on').click(function(){alert(1)})
+        }else {
+            $(this).children().css('display', 'none');
+            $(this).children()[0].alt='0';
+            $('.true_sign_on').unbind('click');
+        }
+
+    })
+
+
+</script>
 </body>
 </html>

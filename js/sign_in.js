@@ -160,48 +160,47 @@ function trueName() {
 //注册页面
 function register() {
     var str = "";
-    str += '<div class="sing">';
-    str += '<div class="sign_close"></div>';
-    str += '<div class="singIn">';
-    str += '<div class="singInL"><img src="img/sing-in.png" alt=""></div>';
-    str += '<div class="singInR">';
-    str += '<div class="singInR1">';
-    str += '<div class="singInRL"><span>*</span>注册手机号</div>';
-    str += '<div class="singInRR"><input type="tel" placeholder="您在P兜的身份凭证" id="userId"></div>';
-    str += '</div>';
-    str += '<div class="singInR1">';
-    str += '<div class="singInRL"><span>*</span>登录密码</div>';
-    str += '<div class="singInRR"><input type="text" placeholder="请设置6-12位密码" id="sing1"></div>';
-    str += '</div>';
-    str += '<div class="singInR1">';
-    str += '<div class="singInRL"><span>*</span>确认登录密码</div>';
-    str += '<div class="singInRR"><input type="text" placeholder="请确认密码" id="sing2"></div>';
-    str += '</div>';
-    str += '<div class="singInR1">';
-    str += '<div class="singInRL"><span>*</span>验证码</div>';
-    str += '<div class="singInRR"><input type="text" placeholder="不区分大小写" id="sing3">';
-    str += '<!--验证码-->';
-    str += '<div class="trueImg">';
-    str += '<div></div>';
-    str += '<div>点击换图</div>';
-    str += '</div>';
-    str += '</div>';
-    str += '</div>';
-    str += '<div class="singInR1">';
-    str += '<div class="singInRL">邀请码</div>';
-    str += '<div class="singInRR"><input type="text" placeholder="选填" id="sing4"></div>';
-    str += '</div>';
-    str += '<div class="singInLas" id="sing5">';
-    str += '<span><input type="checkbox"></span>我已阅读并同意 <a href="">《P兜理财用户服务协议》</a>';
-    str += '</div>';
-    str += '<div class="singInLast"><a href="">注&nbsp;册</a></div>';
-    str += '<div id="worUesr">1</div>';
-    str += '<div id="passW">2</div>';
-    str += '<div id="passWT">3</div>';
-    str += '<div id="trueI">4</div>';
-    str += '</div>';
-    str += '</div>';
-    str += '</div>';
+   str+='  <div class="sing">
+    str+='<div class="singIn">
+    str+='<div class="singInL"><img src="img/sing-in.png" alt=""></div>
+    str+='<div class="singInR">';
+    str+='<div class="singInR1">';
+    str+='<div class="singInRL"><span>*</span>注册手机号</div>';
+    str+='<div class="singInRR"><input type="tel" placeholder="您在P兜的身份凭证" id="sing0"></div>';
+    str+='</div>';
+    str+='<div class="singInR1">';
+    str+='<div class="singInRL"><span>*</span>登录密码</div>';
+    str+='<div class="singInRR"><input type="text" placeholder="请设置6-12位密码" id="sing1"></div>';
+    str+='</div>';
+    str+='<div class="singInR1">';
+    str+='<div class="singInRL"><span>*</span>确认登录密码</div>';
+    str+='<div class="singInRR"><input type="text" placeholder="请确认密码" id="sing2"></div>';
+    str+='</div>';
+    str+='<div class="singInR1">';
+    str+='<div class="singInRL"><span>*</span>验证码</div>';
+    str+='<div class="singInRR"><input type="text" placeholder="不区分大小写" id="sing3">';
+    str+='<!--验证码-->';
+    str+='<div class="trueImg">';
+    str+=' <div></div>';
+    str+='<div>点击换图</div>';
+    str+='</div>';
+    str+='</div>';
+    str+='</div>';
+    str+='<div class="singInR1">';
+    str+='<div class="singInRL">邀请码</div>';
+    str+='<div class="singInRR"><input type="text" placeholder="选填" id="sing4"></div>';
+    str+='</div>';
+    str+='<div class="singInLas  trueDisplay" id="sing5">';
+    str+=' <span><img src="img/greenT.png" alt="0"></span>我已阅读并同意 <a href="javascript:;">《P兜理财用户服务协议》</a>';
+    str+='</div>';
+    str+='<div class="singInLast true_sign_on"><a href="javascript:;">注&nbsp;册</a></div>';
+    str+='<div id="worUesr"></div>';
+    str+='<div id="passW"></div>';
+    str+='<div id="passWT"></div>';
+    str+='<div id="trueI"></div>';
+    str+='</div>';
+    str+='</div>';
+    str+='</div>';
     $('.sign_on').html(str).css('display', 'block');
     $('.sign_close').css('left', '95%').css('top', '50px');
     $('.sign_close').click(function () {
@@ -325,15 +324,13 @@ function passNext() {
     st += '<div class="passwordFootDown">确认修改</div>';
     st += '</div>';
 
-
     $('.password').html(st);
     $('#worUesr').css('top', '267px');
     $('#trueI').css('top', '327px');
     $('input[type="password"]').blur(function (e) {
                                          that = $(this);
                                          return twoPassWord(that)
-                                     }
-    )
+                                     })
 
 }
 
